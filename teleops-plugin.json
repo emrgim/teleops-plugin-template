@@ -1,0 +1,26 @@
+{
+  "id": "example",
+  "name": "Example plugin",
+  "description": "An MCP tool, an automatic answer and a web address: the starting point for your own plugin.",
+  "version": "1.0.0",
+  "author": "emrgim",
+  "homepage": "https://github.com/emrgim/teleops-plugin-template",
+  "main": "index.mjs",
+  "icon": "icon.svg",
+  "settings": [
+    { "key": "greeting", "label": "Greeting", "type": "text", "default": "Hello", "help": "Used by the example_hello tool." },
+    { "key": "autoReply", "label": "Answer “ping” with “pong”", "type": "boolean", "default": false, "help": "In private chats, from the bot or account that receives it." },
+    { "key": "account", "label": "Only for this bot or account", "type": "account", "help": "Empty: all of them." }
+  ],
+  "i18n": {
+    "it": {
+      "name": "Plugin di esempio",
+      "description": "Uno strumento MCP, una risposta automatica e un indirizzo web: il punto di partenza per il tuo plugin.",
+      "settings": {
+        "greeting": { "label": "Saluto", "help": "Usato dallo strumento example_hello." },
+        "autoReply": { "label": "Rispondi «pong» a «ping»", "help": "Nelle chat private, dal bot o account che lo riceve." },
+        "account": { "label": "Solo per questo bot o account", "help": "Vuoto: tutti." }
+      }
+    }
+  }
+}
